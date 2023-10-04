@@ -6,7 +6,7 @@
 ```bash
 git pull https://github.com/coins23/prog1-environment.git
 cd prog1-environment
-docker-compose up
+docker compose up
 # シェルに接続
 docker compose exec jupyter bash
 # 終了
