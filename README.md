@@ -7,11 +7,19 @@
 Dockerと[Docker compose](https://docs.docker.jp/v1.12/compose/install.html)が必要です。
 
 ```bash
+# 初期設定
 git clone https://github.com/coins23/prog1-environment.git
 cd prog1-environment
+
+# Jupyter Notebookを起動
 docker compose up
+# ブラウザで http://localhost:8888 に接続するとJupyter Notebookが起動します
+
 # シェルに接続
 docker compose exec jupyter bash
-# 終了
+
+# Jupyter Notebookを終了
 docker compose down
 ```
+
+`./notebooks`フォルダにノートブックファイルを保存するとJupyter Notebookから確認できます。
