@@ -4,7 +4,7 @@
 
 ## 使い方
 ```bash
-git pull https://github.com/coins23/prog1-environment.git
+git clone https://github.com/coins23/prog1-environment.git
 cd prog1-environment
 docker compose up
 # シェルに接続
