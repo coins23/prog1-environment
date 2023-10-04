@@ -7,5 +7,5 @@ services:
     volumes:
       - type: bind 
         source: ./notebooks
-        target: /opt/workspace
+        target: /opt/notebooks
       
