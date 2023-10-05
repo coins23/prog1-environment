@@ -5,7 +5,7 @@ on: [ workflow_dispatch ]
 env:
   IMAGE_NAME: prog1-environment
   #set tagname
-  TAG_NAME: prog1-environment
+  TAG_NAME: latest
   #set targetdir
   TARGET_DIR: ./
 
@@ -53,6 +53,6 @@ jobs:
           context: ${{ env.TARGET_DIR }}
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: coins23/prog1-environment:latest
+          tags: ${{ steps.meta.outputs.tags }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
