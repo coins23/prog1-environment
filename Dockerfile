@@ -19,4 +19,9 @@ RUN mkdir /opt/notebooks
 
 WORKDIR /opt/notebooks
 
-CMD ["/bin/bash", "-c", "jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --NotebookApp.token='' --NotebookApp.password='' --port=8888 --no-browser --allow-root"]
+RUN mkdir prog
+RUN cd prog
+
+WORKDIR /opt/notebooks/prog
+
+CMD ["/bin/bash", "-c", "jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password='' --port=8888 --no-browser --allow-root"]
