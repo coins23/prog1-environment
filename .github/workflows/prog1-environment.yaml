@@ -53,5 +53,6 @@ jobs:
           context: ${{ env.TARGET_DIR }}
           platforms: linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x
           push: true
+          tag: coins23/prog1-environment:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
