@@ -1,6 +1,7 @@
 version: '3.9'
 services:
   jupyter:
+    image: ghcr.io/coins23/prog1-environment:latest
     build: ./
     ports:
       - 8888:8888
